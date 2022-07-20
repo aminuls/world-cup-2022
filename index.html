@@ -4,12 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---------------------------------------
-        Link of a style.css, font-awesome 
-    ---------------------------------------->
     <script src="https://kit.fontawesome.com/419928b3b9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>World-Cup|2022</title>
+    <style>
+        @media only screen and (max-width:850px){
+            .full-page{
+                grid-template: 60vh auto auto / auto;
+            }
+            .top-banner{
+                height: 100%;
+                width: 100%;
+                gap: 0;
+                margin: 0px;
+            }
+            .top-banner-text{
+                margin-left: 5%;
+                color: #ffffff;
+                font-size: 1em;
+                line-height: 26px;
+                font-weight: 300;
+                flex: 1 1 40%;
+            }
+            .top-banner-title{
+                font-size: 50px;
+                line-height: 60px;
+            }
+            .top-banner-img{
+                flex: 1 1 55%;
+            }
+            .top-banner-img img{
+                left: 850px;
+                transform: scale(.9);
+                animation: player 10s steps(1,end) 0s infinite;
+            }
+            @keyframes player {
+                0%{
+                    left: 850px;
+                }
+                25%{
+                    left: 220px
+                }
+                50%{
+                    left: -420px
+                }
+                75%{
+                    left: -1050px
+                }
+                100%{
+                    left: 850px
+                }
+            }
+            .section-blog{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(auto, 1fr);
+                grid-gap: 25px;
+                margin: 100px 2%;
+            }
+            .section-nav{
+                grid-column: 1/-1;
+                grid-row: 1/2;
+            }
+            .section-nav-link{
+                display: flex;
+                flex: 1 1 100%;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                margin: 10px 0px;
+            }
+            footer{
+                width: 100%;
+            }
+            footer ul{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                row-gap: 25px;
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 576px){
+            .full-page{
+                grid-template: 100vh auto auto / auto;
+            }
+            .top-banner{
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+            }
+            .top-banner-text{
+                text-align: center;
+                margin: 0px 2%;
+            }
+            .top-banner-title{
+                font-size: 40px;
+                line-height: 50px;
+                text-align: center;
+            }
+            .top-banner-img img{
+                left: 900px;
+                transform: scale(.7);
+                animation: player 10s steps(1,end) 0s infinite;
+            }
+            @keyframes player {
+                0%{
+                    left: 900px;
+                }
+                25%{
+                    left: 220px
+                }
+                50%{
+                    left: -420px
+                }
+                75%{
+                    left: -1150px
+                }
+                100%{
+                    left: 900px
+                }
+            }
+            .section-blog{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(auto, 1fr);
+                grid-gap: 25px 0px;
+                margin: 100px 1%;
+            }
+            .section-nav-link{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            footer ul{
+                width: 50%;
+                text-align: center;
+            }
+            #social{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <main class="full-page">

@@ -213,3 +213,39 @@ footer ul li{
     color: rgb(9, 231, 164);
     transition: color .5s ease-in-out;
 }
+.container-flag{
+    display: grid;
+    grid-template: 1fr 1fr/1fr;
+}
+.flag{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 50px 25px;
+}
+.flag span{
+    font-weight: 700;
+}
+.flag-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    top: -60px;
+}
+.flag-text h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #161616;
+}
+.flag-text p{
+    color: #4D4D4D;
+    position: relative;
+    top: 5px;
+}
+.flag-nav{
+    grid-row: 1/3;
+}

@@ -72,9 +72,32 @@ a, .button{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    overflow: hidden;
+    
 }
 .top-banner-img img{
+    position: relative;
     width: 100%;
     height: 95%;
     object-fit: contain;
+    left: -900px;
+    margin-left: 200px;
+    animation: player 10s steps(1,end) 0s infinite;
+}
+@keyframes player {
+    0%{
+        left: 1100px;
+    }
+    25%{
+        left: 300px
+    }
+    50%{
+        left: -485px
+    }
+    75%{
+        left: -1200px
+    }
+    100%{
+        left: 1100px
+    }
 }

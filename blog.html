@@ -9,6 +9,12 @@
     <title>Blog|FIFA</title>
     <style>
         @media only screen and (max-width:850px){
+            .tab-display{
+                display: none;
+            }
+            .view-more{
+                display: block;
+            }
             .full-page{
                 grid-template: 60vh auto auto / auto;
             }
@@ -17,6 +23,7 @@
                 width: 100%;
                 gap: 0;
                 margin: 0px;
+                border-radius: 0px 0px 25px 25px;
             }
             .top-banner-text{
                 margin-left: 5%;
@@ -87,6 +94,12 @@
             }
         }
         @media screen and (max-width: 576px){
+            .tab-display{
+                display: block;
+            }
+            .view-more{
+                display: none;
+            }
             .full-page{
                 grid-template: 100vh auto auto / auto;
             }
@@ -138,11 +151,12 @@
                 align-items: center;
             }
             footer ul{
-                width: 50%;
+                flex-direction: column;
                 text-align: center;
             }
             #social{
                 width: 100%;
+                flex-direction: row;
             }
         }
     </style>

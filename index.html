@@ -9,6 +9,15 @@
     <title>World-Cup|2022</title>
     <style>
         @media only screen and (max-width:850px){
+            .tab-display{
+                display: none;
+            }
+            .view-more{
+                display: block;
+                grid-column: 1/-1;
+                position: relative;
+                top: 20px;
+            }
             .full-page{
                 grid-template: 60vh auto auto / auto;
             }
@@ -16,7 +25,7 @@
                 height: 100%;
                 width: 100%;
                 gap: 0;
-                margin: 0px;
+                border-radius: 0px 0px 25px 25px;
             }
             .top-banner-text{
                 margin-left: 5%;
@@ -87,6 +96,12 @@
             }
         }
         @media screen and (max-width: 576px){
+            .tab-display{
+                display: block;
+            }
+            .view-more{
+                display: none;
+            }
             .full-page{
                 grid-template: 100vh auto auto / auto;
             }
@@ -138,11 +153,12 @@
                 align-items: center;
             }
             footer ul{
-                width: 50%;
+                flex-direction: column;
                 text-align: center;
             }
             #social{
                 width: 100%;
+                flex-direction: row;
             }
         }
     </style>
@@ -237,7 +253,7 @@
                     </article>
                 </article>
             </article>
-            <article>
+            <article class="tab-display">
                 <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
                 <article class="blog-text">
                     <button class="button">Transfer</button>
@@ -248,7 +264,7 @@
                     </article>
                 </article>
             </article>
-            <article>
+            <article class="tab-display">
                 <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
                 <article class="blog-text">
                     <button class="button">Transfer</button>
@@ -259,7 +275,7 @@
                     </article>
                 </article>
             </article>
-            <article>
+            <article class="tab-display">
                 <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
                 <article class="blog-text">
                     <button class="button">Transfer</button>
@@ -270,6 +286,9 @@
                     </article>
                 </article>
             </article>
+            <div class="top-banner-text view-more">
+                <a href="#">View All <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
         </section>
         <footer>
             <h1>Goal</h1>

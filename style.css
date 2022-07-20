@@ -21,6 +21,10 @@ a{
     font-size: 20px;
     font-weight: 600;
 }
+.fa-solid{
+    position: relative;
+    left: 10px;
+}
 .full-page{
     display: grid;
     grid-template: 100vh auto auto / auto;
@@ -178,6 +182,10 @@ a{
     gap: 50px;
     justify-content: flex-start;
     margin-top: 10px;
+}
+.view-more{
+    text-align: center;
+    display: none;
 }
 footer{
     background-color: #161616;
